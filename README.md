@@ -1,14 +1,21 @@
-# Project
+# OpenAI in MS Teams Group Chat
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## Description
 
-As the maintainer of this project, please make a few updates:
+Invite OpenAI to your teams calls to assist w/ QnA right in chat.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+### Details
+
+This effectively gives attendees of your meeting access to ask ChatGPT Turbo 3.5, plus other LLMs, questions right in the meeting's chat using any of these keywords (genie, copilot, openai, chatgpt). Have you ever felt like you're the only SME on a call, and could use a little bit of help during a workshop? Well, this should help, plus drive more engagement.
+
+It effectively integrates Azure OpenAI **/chat/completions** REST-API into Teams for a group chat using power automate connectors. 
+
+### Instructions
+
+Import openai*.zip package to Power Automate and configure the flow. Select your next meeting you want to invite OpenAI. 
+
+If you wish to create a dashboard of the QnA only to measure responses, tunning, etc. Then create a free ADX cluster at https://aka.ms/adx.free, import the dashboard-openai.json and edit datasource to your free cluster URI. Otherwise, edit the flow to not execute the ADX queries.
+
 
 ## Contributing
 
