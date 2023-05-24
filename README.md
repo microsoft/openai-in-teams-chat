@@ -4,13 +4,13 @@
 
 Invite OpenAI to your teams calls to assist w/ QnA right in chat.
 
-### Details
+### Details 🔍
 
 This effectively gives attendees of your meeting access to ask ChatGPT Turbo 3.5, plus other LLMs, questions right in the meeting's chat using any of these keywords (genie, copilot, openai, chatgpt). Have you ever felt like you're the only SME on a call, and could use a little bit of help during a workshop? Well, this should help, plus drive more engagement.
 
 It effectively integrates Azure OpenAI **/chat/completions** REST-API into Teams for a group chat using power automate connectors. Note, this integration will not chain the conversation due to volume & context, so it interacts 1:1.
 
-### Instructions
+### Instructions 🧭
 
 Import openai*.zip package to Power Automate and configure the flow. Select your next meeting you want to invite OpenAI. 
 
