@@ -16,6 +16,7 @@ Import openai*.zip package to Power Automate and configure the flow. Select your
 
 If you wish to create a dashboard of the **QnA-only** to measure latency, tunning, etc. Then create a free ADX cluster at https://aka.ms/adx.free, import the dashboard-openai.json and edit datasource to your free cluster URI. Otherwise, edit the flow to not execute the ADX queries.
 
+Ref: https://www.youtube.com/watch?v=U00hiV1I_S0
 
 ## Contributing
 
