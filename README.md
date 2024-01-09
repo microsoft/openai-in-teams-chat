@@ -14,15 +14,17 @@ It effectively integrates Azure OpenAI **/chat/completions** REST-API into Teams
 
 Import openai*.zip package to Power Automate and configure the flow. Select your next meeting you want to invite OpenAI. 
 
-If you wish to create a dashboard of the **QnA-only** to measure latency, tunning, etc. Then create a free ADX cluster at https://aka.ms/adx.free, import the dashboard-openai.json and edit datasource to your free cluster URI. Otherwise, edit the flow to not execute the ADX queries.
+If you wish to create a dashboard of the **QnA-only** to measure latency, tunning, etc. Then create a free ADX cluster at https://aka.ms/adx.free, import the [dashboard-OpenAI.json](dashboard-OpenAI.json) and edit datasource to your free cluster URI. Otherwise, edit the flow to not execute the ADX queries.
 
 ### Flow 🤖
-![When keywords mentioned in Teams group chat](https://github.com/microsoft/openai-in-teams-chat/assets/4984616/75025513-e648-4c54-8173-831dfcd6e05b)
-![Apply to each](https://github.com/microsoft/openai-in-teams-chat/assets/4984616/7ca996e5-5a8c-456f-ab10-24bb2b52fbd6)
+![When keywords mentioned in Teams group chat](https://github.com/microsoft/openai-in-teams-chat/assets/4984616/75025513-e648-4c54-8173-831dfcd6e05b "Power Automate - Keyword Trigger")
+![Apply to each](https://github.com/microsoft/openai-in-teams-chat/assets/4984616/7ca996e5-5a8c-456f-ab10-24bb2b52fbd6 "Power Automate - Apply to each Loop")
 Post message to chat or channel body Expression ```body('HTTP')?['choices'][0]?['message']?['content']```
 
 Ref: https://www.youtube.com/watch?v=U00hiV1I_S0
 
+### Dashboard-OpenAI (Preview)
+![dashboard-OpenAI.png](dashboard-OpenAI.png "dashboard-OpenAI.png")
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
